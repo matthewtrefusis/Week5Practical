@@ -22,13 +22,11 @@ public class W05P09 {
 
         scanner.close();
 
-        System.out.println("");
-
         int[][] transposedMatrix = transposeMatrix(matrix, rows, cols);
 
         for (int[] row : transposedMatrix) {
             for (int element : row) {
-                System.out.printf("%5d", element);
+                System.out.print(element + " ");
             }
             System.out.println(); // New line after each row
         }
